@@ -53,18 +53,21 @@ main img {
   padding: 30px;
   background-color: #ffffff;
   border-radius: 5px;
-  min-width: 650px;
+  max-width: 100%;
 }
 
-.tituloFundo {
+.titulo {
+  position: relative;
+}
+
+.titulo h2 {
   color: #e0e2db;
   font-size: 50px;
   font-family: "Roboto", sans-serif;
-  position: relative;
   width: 100%;
 }
 
-.tituloFrente {
+.titulo span {
   color: #414141;
   font-size: 30px;
   font-family: "Dancing Script", cursive;
@@ -72,7 +75,7 @@ main img {
   line-height: 55px;
   position: absolute;
   width: 100%;
-  top: 200px;
+  top: 0;
   margin-left: 10px;
 }
 
