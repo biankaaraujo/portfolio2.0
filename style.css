@@ -56,6 +56,18 @@ main img {
   max-width: 100%;
 }
 
+#sobreMim {
+  position: relative;
+}
+
+.detalhe {
+  border: 2px solid #511730;
+  position: absolute;
+  width: 60px;
+  left: -5%;
+  top: 5%;
+}
+
 .titulo {
   position: relative;
 }
