@@ -39,25 +39,25 @@ nav ul li a {
 
 main {
   margin: 70px 70px 120px 70px;
-  /* border: 2px solid yellow; */
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-main img {
-  width: 250px;
-  max-width: 100%;
 }
 
 #sobreMim {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#sobreMim #avatar {
+  width: 250px;
+  max-width: 40%;
+}
+
+#sobreMim #descricao {
+  position: relative;
   padding: 30px;
   background-color: #ffffff;
   border-radius: 5px;
-  max-width: 100%;
-}
-
-#sobreMim {
-  position: relative;
+  width: 60%;
 }
 
 .detalhe {
@@ -91,10 +91,59 @@ main img {
   margin-left: 10px;
 }
 
-main p {
+#sobreMim #descricao p {
   font-family: "Roboto", sans-serif;
   color: #414141;
   font-size: 18px;
   text-align: center;
   margin-top: 20px;
+}
+
+#habilidades {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 70px;
+}
+
+#habilidades .titulo {
+  width: 22%;
+  display: flex;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 5px;
+  align-items: center;
+}
+
+#habilidades .titulo span {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#habilidades .itensHabilidade {
+  width: 60%;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+#habilidades .itensHabilidade ul {
+  display: flex;
+  gap: 50px;
+  padding: 20px 90px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#habilidades .itensHabilidade ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f7f7f7;
+  border-radius: 15px;
+  width: 110px;
+  padding: 10px;
+}
+
+#habilidades .itensHabilidade .logo {
+  width: 70px;
 }
