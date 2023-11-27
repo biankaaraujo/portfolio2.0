@@ -99,6 +99,14 @@ main {
   margin-top: 20px;
 }
 
+.separador {
+  border: 1px solid #e0e2db;
+  display: flex;
+  margin-top: 70px;
+  margin-left: 25%;
+  width: 50%;
+}
+
 #habilidades {
   display: flex;
   justify-content: space-between;
@@ -148,4 +156,54 @@ main {
 
 #habilidades .itensHabilidade .logo {
   width: 70px;
+}
+
+#projetos {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #ffffff;
+  margin-top: 70px;
+  width: 100%;
+  border-radius: 5px;
+  padding: 40px;
+}
+
+#projetos .titulo span {
+  left: 0%;
+}
+
+#projetos .itensProjetos ul {
+  display: flex;
+  gap: 50px;
+  overflow: hidden;
+}
+
+#projetos .itensProjetos ul li {
+  display: flex;
+  position: relative;
+}
+
+#projetos .itensProjetos img {
+  display: flex;
+  width: 400px;
+  height: 240px;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+#projetos .itensProjetos img.informacao {
+  position: absolute;
+  width: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+
+#projetos .itensProjetos ul li:hover > img.foto {
+  filter: brightness(50%) blur(2px);
+}
+
+#projetos .itensProjetos ul li:hover > img.informacao {
+  display: inline-block;
 }
