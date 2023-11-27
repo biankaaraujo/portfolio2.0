@@ -14,6 +14,10 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #3c153b;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 #logo {
@@ -23,13 +27,13 @@ header {
 nav ul {
   display: flex;
   margin-right: 70px;
-  gap: 40px;
 }
 
 nav ul li {
   display: flex;
   text-decoration: none;
   font-size: 15px;
+  padding: 0px 20px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -38,14 +42,19 @@ nav ul li a {
   color: #ffffff;
 }
 
+nav ul li a:hover {
+  color: #bb5d84;
+}
+
 main {
-  margin: 70px 70px 120px 70px;
+  margin: 0px 70px 120px 70px;
 }
 
 #sobreMim {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  padding-top: 180px;
 }
 
 #sobreMim #avatar {
