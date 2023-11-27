@@ -30,6 +30,7 @@ nav ul li {
   display: flex;
   text-decoration: none;
   font-size: 15px;
+  font-family: "Roboto", sans-serif;
 }
 
 nav ul li a {
@@ -140,6 +141,7 @@ main {
   align-items: center;
   background-color: #f7f7f7;
   color: #414141;
+  font-family: "Roboto", sans-serif;
   border-radius: 15px;
   width: 110px;
   padding: 10px;
@@ -228,6 +230,7 @@ main {
   align-items: center;
   gap: 10px;
   color: #414141;
+  font-family: "Roboto", sans-serif;
 }
 
 #contatos .itensContatos .logoContato {
@@ -239,5 +242,6 @@ main {
   background-color: #3c153b;
   padding: 30px;
   color: #ffffff;
+  font-family: "Roboto", sans-serif;
   text-align: center;
 }
