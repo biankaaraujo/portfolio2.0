@@ -99,14 +99,6 @@ main {
   margin-top: 20px;
 }
 
-.separador {
-  border: 1px solid #e0e2db;
-  display: flex;
-  margin-top: 70px;
-  margin-left: 25%;
-  width: 50%;
-}
-
 #habilidades {
   display: flex;
   justify-content: space-between;
@@ -206,4 +198,38 @@ main {
 
 #projetos .itensProjetos ul li:hover > img.informacao {
   display: inline-block;
+}
+
+#contatos {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #ffffff;
+  margin-top: 70px;
+  width: 100%;
+  border-radius: 5px;
+  padding: 40px;
+}
+
+#contatos .titulo span {
+  left: 0%;
+}
+
+#contatos .itensContatos ul {
+  display: flex;
+  gap: 20px;
+  padding: 50px 100px 0px 100px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#contatos .itensContatos ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #414141;
+}
+
+#contatos .itensContatos .logoContato {
+  width: 30px;
 }
