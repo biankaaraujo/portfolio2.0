@@ -176,19 +176,13 @@ main {
   left: 0%;
 }
 
-#projetos .itensProjetos ul {
-  display: flex;
-  gap: 50px;
-  overflow: hidden;
-}
-
-#projetos .itensProjetos ul li {
+#projetos .itensProjetos .owl-carousel .item {
   display: flex;
   position: relative;
 }
 
 #projetos .itensProjetos img {
-  display: flex;
+  /* display: flex; */
   width: 400px;
   height: 240px;
   border-radius: 10px;
@@ -203,11 +197,11 @@ main {
   display: none;
 }
 
-#projetos .itensProjetos ul li:hover > img.foto {
+#projetos .itensProjetos .owl-carousel .item:hover > img.foto {
   filter: brightness(50%) blur(2px);
 }
 
-#projetos .itensProjetos ul li:hover > img.informacao {
+#projetos .itensProjetos .owl-carousel .item:hover > img.informacao {
   display: inline-block;
 }
 
