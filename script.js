@@ -33,3 +33,15 @@ $(".owl-carousel").owlCarousel({
     },
   },
 });
+
+// Menu hamburguer
+var menuButton = document.getElementById("menu-button");
+var menu = document.querySelector("nav ul");
+
+menuButton.addEventListener("click", function () {
+  if (menu.style.display === "flex") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "flex";
+  }
+});

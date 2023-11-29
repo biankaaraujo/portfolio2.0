@@ -24,6 +24,17 @@ header {
   max-width: 100%;
 }
 
+#menu-button {
+  background: none;
+  border: 0;
+  padding-right: 80px;
+  display: none;
+}
+
+#menu-button img {
+  width: 30px;
+}
+
 nav ul {
   display: flex;
   margin-right: 70px;
