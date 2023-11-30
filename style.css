@@ -134,11 +134,15 @@ main {
   background-color: #ffffff;
   border-radius: 5px;
   align-items: center;
+  word-wrap: break-word;
+  padding: 0px 40px;
 }
 
 #habilidades .titulo span {
   top: 50%;
   transform: translateY(-50%);
+  left: 0;
+  padding: 0px 40px;
 }
 
 #habilidades .itensHabilidade {
@@ -258,4 +262,53 @@ main {
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  nav ul {
+    display: none;
+  }
+  main {
+  margin: 0px 30px 120px 30px;
+}
+  #menu-button {
+    display: inline-block;
+  }
+  #sobreMim {
+    flex-direction: column;
+  }
+  #sobreMim #avatar {
+    max-width: 100%;
+    align-self: center;
+  }
+  #sobreMim #descricao {
+    width: 100%;
+    margin-top: 50px;
+  }
+  #sobreMim #descricao .titulo {
+    text-align: center;
+  }
+  #sobreMim #descricao .titulo span {
+    right: 0;
+    padding: 1px;
+  }
+  #habilidades {
+    flex-direction: column;
+  }
+  #habilidades .titulo {
+    width: 100%;
+    padding: 40px 10px;
+  }
+  #habilidades .titulo span {
+    padding: 0px 10px;
+  }
+  #habilidades .itensHabilidade {
+    width: 100%;
+  }
+  #habilidades .itensHabilidade ul {
+    justify-content: center;
+  }
+  #contatos .itensContatos ul {
+    padding: 50px 10px 0px 10px;
+  }
 }
