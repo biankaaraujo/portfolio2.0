@@ -202,6 +202,7 @@ main {
   height: 240px;
   border-radius: 10px;
   margin-top: 50px;
+  cursor: pointer;
 }
 
 #projetos .itensProjetos img.informacao {
@@ -264,13 +265,89 @@ main {
   text-align: center;
 }
 
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 30px 50px;
+  transform: translate(-50%, -50%);
+  background-color: #f7f7f7;
+  border-radius: 5px;
+}
+
+.popup-container {
+  display: none;
+  opacity: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: brightness(50%) blur(5px);
+  /* transition: opacity 3s linear, display 3s linear; */
+}
+
+.popup button {
+  border: 0px;
+  background: none;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.popup button img {
+  width: 30px;
+}
+
+.popup button img:hover {
+  background-color: #8a198441;
+  border-radius: 50%;
+}
+
+.popup .detalhes h2 {
+  color: #3c153b;
+  font-size: 50px;
+  font-family: "Roboto", sans-serif;
+}
+
+.popup .detalhes p {
+  color: #414141;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+}
+
+.popup .preview {
+  width: 400px;
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+.popup .visualizacaoProjeto {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.popup .visualizacaoProjeto a {
+  background-color: #3c153b;
+  border-radius: 5px;
+  padding: 10px 15px;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 900px) {
   nav ul {
     display: none;
   }
   main {
-  margin: 0px 30px 120px 30px;
-}
+    margin: 0px 30px 120px 30px;
+  }
   #menu-button {
     display: inline-block;
   }

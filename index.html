@@ -99,7 +99,7 @@
 
         <div class="itensProjetos">
           <div class="owl-carousel owl-theme">
-            <div class="item">
+            <div class="item" idx="projeto1">
               <img
                 class="foto"
                 src="./assets/portfolio.png"
@@ -111,7 +111,7 @@
                 alt="Icone de informação"
               />
             </div>
-            <div class="item">
+            <div class="item" idx="projeto2">
               <img
                 class="foto"
                 src="./assets/devlinks.png"
@@ -123,7 +123,7 @@
                 alt="Icone de informação"
               />
             </div>
-            <div class="item">
+            <div class="item" idx="projeto3">
               <img
                 class="foto"
                 src="./assets/devnews.png"
@@ -180,6 +180,84 @@
         <p>By Bianka Araujo</p>
       </section>
     </footer>
+
+    <div class="popup-container">
+      <div id="projeto1" class="popup">
+        <button type="button" onclick="closePopupWithButton(this)">
+          <img src="./assets/close.png" alt="Botão para fechar" />
+        </button>
+        <div class="detalhes">
+          <h2>Portfolio</h2>
+          <p>Página web do meu portfolio.</p>
+          <p>Desenvolvido com as tecnologias: HTML e CSS.</p>
+        </div>
+        <img
+          class="preview"
+          src="./assets/previewPortfolio1.png"
+          alt="Preview projeto Portfolio"
+        />
+        <div class="visualizacaoProjeto">
+          <a href="https://biankaaraujo.github.io/portfolio/" target="_blank"
+            >Acessar projeto</a
+          >
+          <a href="https://github.com/biankaaraujo/portfolio" target="_blank"
+            >Acessar repositório</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-container">
+      <div id="projeto2" class="popup" onkeypress="closeOnEsc(event)">
+        <button type="button" onclick="closePopupWithButton(this)">
+          <img src="./assets/close.png" alt="Botão para fechar" />
+        </button>
+        <div class="detalhes">
+          <h2>DevLinks</h2>
+          <p>Agregador de links para usar como cartão de visitas online.</p>
+          <p>Desenvolvido com as tecnologias: HTML, CSS e JavaScript.</p>
+        </div>
+        <img
+          class="preview"
+          src="./assets/previewDevLinks.png"
+          alt="Preview projeto DevLinks"
+        />
+        <div class="visualizacaoProjeto">
+          <a href="https://biankaaraujo.github.io/devlinks/" target="_blank"
+            >Acessar projeto</a
+          >
+          <a href="https://github.com/biankaaraujo/devlinks" target="_blank"
+            >Acessar repositório</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-container">
+      <div id="projeto3" class="popup">
+        <button type="button" onclick="closePopupWithButton(this)">
+          <img src="./assets/close.png" alt="Botão para fechar" />
+        </button>
+        <div class="detalhes">
+          <h2>DevNews</h2>
+          <p>Página para captação de leads ou newsletter.</p>
+          <p>Desenvolvido com as tecnologias: HTML e CSS.</p>
+        </div>
+        <img
+          class="preview"
+          src="./assets/previewDevNews.png"
+          alt="Preview projeto DevNews"
+        />
+        <div class="visualizacaoProjeto">
+          <a href="https://biankaaraujo.github.io/devnews/" target="_blank"
+            >Acessar projeto</a
+          >
+          <a href="https://github.com/biankaaraujo/devnews" target="_blank"
+            >Acessar repositório</a
+          >
+        </div>
+      </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
