@@ -11,6 +11,35 @@ document.querySelectorAll("nav ul li a[href^='#']").forEach((ancora) => {
       behavior: "smooth", // evento de suavidade
     });
   });
+
+  // Adiciona evento para fechar ao clicar na opção do menu
+  ancora.addEventListener("click", function closeOnClick(event) {
+    const nav = document.querySelector("nav");
+
+    if (event.target === ancora) {
+      nav.style.opacity = "0";
+      nav.style.transition = "opacity 0.3s linear";
+    }
+  });
+});
+
+// Evento para abrir e fechar o menu hamburguer
+const menuButton = document.getElementById("menu-button");
+const menu = document.querySelector("nav ul");
+const nav = document.querySelector("nav");
+
+menuButton.addEventListener("click", function closeMenu() {
+  if (menu.style.display === "flex") {
+    nav.style.opacity = "0";
+    setTimeout(() => {
+      menu.style.display = "none";
+      nav.style.transition = "opacity 0.5s linear";
+    }, 500);
+  } else {
+    menu.style.display = "flex";
+    nav.style.transition = "opacity 0.5s lineae";
+    nav.style.opacity = "1";
+  }
 });
 
 // Evento carrossel nos itens projeto
@@ -32,18 +61,6 @@ $(".owl-carousel").owlCarousel({
       items: 2,
     },
   },
-});
-
-// Menu hamburguer
-var menuButton = document.getElementById("menu-button");
-var menu = document.querySelector("nav ul");
-
-menuButton.addEventListener("click", function () {
-  if (menu.style.display === "flex") {
-    menu.style.display = "none";
-  } else {
-    menu.style.display = "flex";
-  }
 });
 
 // Evento de clique para abrir/fechar mais detalhes sobre o projeto
@@ -76,7 +93,6 @@ function closePopup(popUp) {
   }, 500);
 }
 
-// novo
 document.querySelectorAll("#projetos .itensProjetos .item").forEach((item) => {
   item.addEventListener("click", function (e) {
     const projetoIdx = this.getAttribute("idx");
