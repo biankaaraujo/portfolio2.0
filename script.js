@@ -37,7 +37,7 @@ menuButton.addEventListener("click", function closeMenu() {
     }, 500);
   } else {
     menu.style.display = "flex";
-    nav.style.transition = "opacity 0.5s lineae";
+    nav.style.transition = "opacity 0.5s linear";
     nav.style.opacity = "1";
   }
 });

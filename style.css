@@ -1,4 +1,3 @@
-/* CSS reset */
 * {
   margin: 0px;
   padding: 0px;
@@ -226,6 +225,11 @@ main {
   display: inline-block;
 }
 
+.owl-nav span {
+    padding: 5px;
+    font-size: 20px;
+  }
+
 #contatos {
   display: flex;
   flex-direction: column;
@@ -363,7 +367,7 @@ main {
     left: 0;
     width: 100%;
     background-color: #3c153b;
-    opacity: 1;
+    opacity: 0;
     transition: opacity 0.5s linear;
   }
   nav.show {
@@ -421,6 +425,13 @@ main {
   }
   #habilidades .itensHabilidade ul {
     justify-content: center;
+  }
+  #projetos {
+    padding: 20px;
+  }
+  #projetos .itensProjetos img {
+    width: 310px;
+    height: 180px;
   }
   #contatos .itensContatos ul {
     padding: 50px 10px 0px 10px;
