@@ -430,8 +430,9 @@ main {
     padding: 20px;
   }
   #projetos .itensProjetos img {
-    width: 310px;
+    width: 290px;
     height: 180px;
+    margin-top: 30px;
   }
   #contatos .itensContatos ul {
     padding: 50px 10px 0px 10px;
