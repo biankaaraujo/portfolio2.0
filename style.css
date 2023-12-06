@@ -226,9 +226,9 @@ main {
 }
 
 .owl-nav span {
-    padding: 5px;
-    font-size: 20px;
-  }
+  padding: 5px;
+  font-size: 20px;
+}
 
 #contatos {
   display: flex;
@@ -390,10 +390,21 @@ main {
     padding: 15px 0px;
   }
   main {
-    margin: 0px 30px 120px 30px;
+    margin: 0px 20px 120px 20px;
   }
+  .titulo h2 {
+    font-size: 40px;
+  }
+
+  .titulo span {
+    font-size: 20px;
+    letter-spacing: 15px;
+    line-height: 45px;
+  }
+
   #sobreMim {
     flex-direction: column;
+    padding-top: 150px;
   }
   #sobreMim #avatar {
     max-width: 100%;
