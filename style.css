@@ -8,10 +8,20 @@ body {
   background-color: #f7f7f7;
 }
 
-header {
+#container-header {
+  max-width: 1365px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+#container-main {
+  max-width: 1365px;
+  margin: 0 auto;
+}
+
+header {
   background-color: #3c153b;
   position: fixed;
   top: 0;
@@ -463,7 +473,7 @@ main {
 }
 
 @media (max-width: 940px) {
-   main {
+  main {
     margin: 0px 20px 120px 20px;
   }
   .titulo h2 {

@@ -23,161 +23,169 @@
   </head>
   <body>
     <header>
-      <img id="logo" src="./assets/logo.png" alt="Imagem do logo: BA." />
-      <button id="menu-button" type="button">
-        <img src="./assets/menuHamburguer.png" alt="" />
-      </button>
-      <nav>
-        <ul>
-          <li>
-            <a href="#sobreMim">SOBRE MIM</a>
-          </li>
-          <li>
-            <a href="#habilidades">HABILIDADES</a>
-          </li>
-          <li>
-            <a href="#projetos">PROJETOS</a>
-          </li>
-          <li>
-            <a href="#contatos">CONTATOS</a>
-          </li>
-        </ul>
-      </nav>
+      <div id="container-header">
+        <img id="logo" src="./assets/logo.png" alt="Imagem do logo: BA." />
+        <button id="menu-button" type="button">
+          <img src="./assets/menuHamburguer.png" alt="" />
+        </button>
+        <nav>
+          <ul>
+            <li>
+              <a href="#sobreMim">SOBRE MIM</a>
+            </li>
+            <li>
+              <a href="#habilidades">HABILIDADES</a>
+            </li>
+            <li>
+              <a href="#projetos">PROJETOS</a>
+            </li>
+            <li>
+              <a href="#contatos">CONTATOS</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main>
-      <section id="sobreMim">
-        <img
-          id="avatar"
-          src="./assets/avatar.png"
-          alt="Foto de Bianka Araujo sorrindo."
-        />
-        <div id="descricao">
-          <span class="detalhe"></span>
+    <div id="container-main">
+      <main>
+        <section id="sobreMim">
+          <img
+            id="avatar"
+            src="./assets/avatar.png"
+            alt="Foto de Bianka Araujo sorrindo."
+          />
+          <div id="descricao">
+            <span class="detalhe"></span>
+            <div class="titulo">
+              <h2>BIANKA CHRISTINE MILIANTE DE ARAUJO</h2>
+              <span>bianka christine <br />miliante de araujo</span>
+            </div>
+            <p>
+              Com formação em andamento em Análise e Desenvolvimento de Sistemas
+              e foco no desenvolvimento front-end, meu objetivo é fornecer
+              soluções digitais inovadoras. Mantendo constante busca nas
+              tendências e tecnologias recentes, garantindo que minhas
+              interfaces sejam acessíveis e ofereçam uma ótima experiência de
+              usabilidade para os usuários.
+            </p>
+          </div>
+        </section>
+
+        <section id="habilidades">
           <div class="titulo">
-            <h2>BIANKA CHRISTINE MILIANTE DE ARAUJO</h2>
-            <span>bianka christine <br />miliante de araujo</span>
+            <h2>HABILIDADES</h2>
+            <span>habilidades</span>
           </div>
-          <p>
-            Com formação em andamento em Análise e Desenvolvimento de Sistemas e
-            foco no desenvolvimento front-end, meu objetivo é fornecer soluções
-            digitais inovadoras. Mantendo constante busca nas tendências e
-            tecnologias recentes, garantindo que minhas interfaces sejam
-            acessíveis e ofereçam uma ótima experiência de usabilidade para os
-            usuários.
-          </p>
-        </div>
-      </section>
+          <div class="itensHabilidade">
+            <ul>
+              <li>
+                <p>HTML</p>
+                <img
+                  class="logo"
+                  src="./assets/logohtml.png"
+                  alt="Logo HTML5"
+                />
+              </li>
+              <li>
+                <p>CSS</p>
+                <img class="logo" src="./assets/logocss.png" alt="Logo CSS3" />
+              </li>
+              <li>
+                <p>JAVASCRIPT</p>
+                <img
+                  class="logo"
+                  src="./assets/logojavascript.png"
+                  alt="Logo JavaScript"
+                />
+              </li>
+            </ul>
+          </div>
+        </section>
 
-      <section id="habilidades">
-        <div class="titulo">
-          <h2>HABILIDADES</h2>
-          <span>habilidades</span>
-        </div>
-        <div class="itensHabilidade">
-          <ul>
-            <li>
-              <p>HTML</p>
-              <img class="logo" src="./assets/logohtml.png" alt="Logo HTML5" />
-            </li>
-            <li>
-              <p>CSS</p>
-              <img class="logo" src="./assets/logocss.png" alt="Logo CSS3" />
-            </li>
-            <li>
-              <p>JAVASCRIPT</p>
-              <img
-                class="logo"
-                src="./assets/logojavascript.png"
-                alt="Logo JavaScript"
-              />
-            </li>
-          </ul>
-        </div>
-      </section>
+        <section id="projetos">
+          <div class="titulo">
+            <h2>PROJETOS</h2>
+            <span>projetos</span>
+          </div>
 
-      <section id="projetos">
-        <div class="titulo">
-          <h2>PROJETOS</h2>
-          <span>projetos</span>
-        </div>
-
-        <div class="itensProjetos">
-          <div class="owl-carousel owl-theme">
-            <div class="item" idx="projeto1">
-              <img
-                class="foto"
-                src="./assets/portfolio.png"
-                alt="Imagem demonstrativa do projeto portfolio"
-              />
-              <img
-                class="informacao"
-                src="./assets/logoinformacao.svg"
-                alt="Icone de informação"
-              />
-            </div>
-            <div class="item" idx="projeto2">
-              <img
-                class="foto"
-                src="./assets/devlinks.png"
-                alt="Imagem demonstrativa do projeto devlinks"
-              />
-              <img
-                class="informacao"
-                src="./assets/logoinformacao.svg"
-                alt="Icone de informação"
-              />
-            </div>
-            <div class="item" idx="projeto3">
-              <img
-                class="foto"
-                src="./assets/devnews.png"
-                alt="Imagem demonstrativa do projeto devnews"
-              />
-              <img
-                class="informacao"
-                src="./assets/logoinformacao.svg"
-                alt="Icone de informação"
-              />
+          <div class="itensProjetos">
+            <div class="owl-carousel owl-theme">
+              <div class="item" idx="projeto1">
+                <img
+                  class="foto"
+                  src="./assets/portfolio.png"
+                  alt="Imagem demonstrativa do projeto portfolio"
+                />
+                <img
+                  class="informacao"
+                  src="./assets/logoinformacao.svg"
+                  alt="Icone de informação"
+                />
+              </div>
+              <div class="item" idx="projeto2">
+                <img
+                  class="foto"
+                  src="./assets/devlinks.png"
+                  alt="Imagem demonstrativa do projeto devlinks"
+                />
+                <img
+                  class="informacao"
+                  src="./assets/logoinformacao.svg"
+                  alt="Icone de informação"
+                />
+              </div>
+              <div class="item" idx="projeto3">
+                <img
+                  class="foto"
+                  src="./assets/devnews.png"
+                  alt="Imagem demonstrativa do projeto devnews"
+                />
+                <img
+                  class="informacao"
+                  src="./assets/logoinformacao.svg"
+                  alt="Icone de informação"
+                />
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="contatos">
-        <div class="titulo">
-          <h2>CONTATOS</h2>
-          <span>contatos</span>
-        </div>
-        <div class="itensContatos">
-          <ul>
-            <li>
-              <img
-                class="logoContato"
-                src="./assets/logoemail.png"
-                alt="Logo e-mail"
-              />
-              <p>biankachrys@gmail.com</p>
-            </li>
-            <li>
-              <img
-                class="logoContato"
-                src="./assets/telefone.png"
-                alt="Logo telefone"
-              />
-              <p>(47) 99216-7574</p>
-            </li>
-            <li>
-              <img
-                class="logoContato"
-                src="./assets/logogithub.png"
-                alt="Logo github"
-              />
-              <p>biankaaraujo</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
+        <section id="contatos">
+          <div class="titulo">
+            <h2>CONTATOS</h2>
+            <span>contatos</span>
+          </div>
+          <div class="itensContatos">
+            <ul>
+              <li>
+                <img
+                  class="logoContato"
+                  src="./assets/logoemail.png"
+                  alt="Logo e-mail"
+                />
+                <p>biankachrys@gmail.com</p>
+              </li>
+              <li>
+                <img
+                  class="logoContato"
+                  src="./assets/telefone.png"
+                  alt="Logo telefone"
+                />
+                <p>(47) 99216-7574</p>
+              </li>
+              <li>
+                <img
+                  class="logoContato"
+                  src="./assets/logogithub.png"
+                  alt="Logo github"
+                />
+                <p>biankaaraujo</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
 
     <footer>
       <section id="rodape">
