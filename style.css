@@ -127,7 +127,7 @@ main {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding-top: 70px;
+  margin-top: 70px;
 }
 
 #habilidades .titulo {
@@ -138,7 +138,7 @@ main {
   border-radius: 5px;
   align-items: center;
   word-wrap: break-word;
-  padding: 0px 40px;
+  padding: 30px 40px;
 }
 
 #habilidades .titulo span {
@@ -152,6 +152,8 @@ main {
   width: 60%;
   background-color: #ffffff;
   border-radius: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 #habilidades .itensHabilidade ul {
@@ -188,7 +190,7 @@ main {
   margin-top: 70px;
   width: 100%;
   border-radius: 5px;
-  padding: 40px;
+  padding: 30px;
 }
 
 #projetos .titulo span {
@@ -204,7 +206,7 @@ main {
   width: 400px;
   height: 240px;
   border-radius: 10px;
-  margin-top: 50px;
+  margin-top: 40px;
   cursor: pointer;
 }
 
@@ -237,7 +239,7 @@ main {
   margin-top: 70px;
   width: 100%;
   border-radius: 5px;
-  padding: 40px;
+  padding: 30px;
 }
 
 #contatos .titulo span {
@@ -412,6 +414,8 @@ main {
   #sobreMim #descricao {
     width: 100%;
     margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   #sobreMim #descricao .titulo {
     text-align: center;
@@ -420,29 +424,40 @@ main {
     right: 0;
     padding: 1px;
   }
+  #sobreMim #descricao p {
+    margin-top: 0px;
+    padding-top: 50px;
+  }
   #habilidades {
     flex-direction: column;
   }
   #habilidades .titulo {
     width: 100%;
-    padding: 40px 10px;
+    padding: 50px 10px;
   }
   #habilidades .titulo span {
     padding: 0px 10px;
   }
   #habilidades .itensHabilidade {
     width: 100%;
+    padding-bottom: 50px;
   }
   #habilidades .itensHabilidade ul {
     justify-content: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
   #projetos {
-    padding: 20px;
+    padding: 50px 20px;
   }
   #projetos .itensProjetos img {
     width: 290px;
     height: 180px;
-    margin-top: 30px;
+    margin-top: 50px;
+  }
+  #contatos {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   #contatos .itensContatos ul {
     padding: 50px 10px 0px 10px;
