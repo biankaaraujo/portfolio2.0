@@ -17,7 +17,7 @@ document.querySelectorAll("nav ul li a[href^='#']").forEach((ancora) => {
     const displayBotao = window
       .getComputedStyle(menuButton)
       .getPropertyValue("display");
-    
+
     if (displayBotao !== "none") {
       nav.style.opacity = "0";
       nav.style.transition = "opacity 0.3s linear";
@@ -134,14 +134,10 @@ function openPopup(popUp) {
 }
 
 // Função para verificar o tamanho da tela e recarregar a página se necessário
-function verificarTamanhoDaTela() {
-  // Defina o tamanho limite, por exemplo, 900 pixels
+window.addEventListener("resize", () => {
   var tamanhoLimite = 900;
 
-  if (window.innerWidth <= tamanhoLimite) {
+  if (window.innerWidth > tamanhoLimite) {
     location.reload();
   }
-}
-// Adiciona um ouvinte de evento para o evento de redimensionamento da janela
-window.addEventListener('resize', verificarTamanhoDaTela);
-
+});
