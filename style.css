@@ -351,7 +351,7 @@ main {
   text-decoration: none;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 650px) {
   #menu-button {
     display: inline-block;
     align-self: flex-end;
@@ -396,13 +396,11 @@ main {
   .titulo h2 {
     font-size: 40px;
   }
-
   .titulo span {
     font-size: 20px;
     letter-spacing: 15px;
     line-height: 45px;
   }
-
   #sobreMim {
     flex-direction: column;
     padding-top: 150px;
@@ -461,5 +459,53 @@ main {
   }
   #contatos .itensContatos ul {
     padding: 50px 10px 0px 10px;
+  }
+}
+
+@media (max-width: 940px) {
+   main {
+    margin: 0px 20px 120px 20px;
+  }
+  .titulo h2 {
+    font-size: 40px;
+  }
+  .titulo span {
+    font-size: 20px;
+    letter-spacing: 15px;
+    line-height: 45px;
+  }
+  #sobreMim #descricao .titulo {
+    text-align: center;
+  }
+  #sobreMim #descricao .titulo span {
+    right: 0;
+  }
+  #habilidades {
+    flex-direction: column;
+  }
+  #habilidades .titulo {
+    width: 100%;
+    padding: 50px 10px 30px 10px;
+  }
+  #habilidades .titulo span {
+    padding: 0px 10px;
+    margin-top: 5px;
+  }
+  #habilidades .itensHabilidade {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  #habilidades .itensHabilidade ul {
+    justify-content: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  #projetos {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  #contatos {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
