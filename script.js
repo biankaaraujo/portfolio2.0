@@ -1,3 +1,6 @@
+const nav = document.querySelector("nav");
+const menuButton = document.getElementById("menu-button");
+
 // Criar evento de click nos itens do menu para dar scroll na página
 document.querySelectorAll("nav ul li a[href^='#']").forEach((ancora) => {
   ancora.addEventListener("click", function (e) {
@@ -10,23 +13,31 @@ document.querySelectorAll("nav ul li a[href^='#']").forEach((ancora) => {
       top: target.getBoundingClientRect().top - menuHeight,
       behavior: "smooth", // evento de suavidade
     });
-  });
 
-  // Adiciona evento para fechar ao clicar na opção do menu
-  ancora.addEventListener("click", function closeOnClick(event) {
-    const nav = document.querySelector("nav");
-
-    if (event.target === ancora) {
+    const displayBotao = window
+      .getComputedStyle(menuButton)
+      .getPropertyValue("display");
+    
+    if (displayBotao !== "none") {
       nav.style.opacity = "0";
       nav.style.transition = "opacity 0.3s linear";
     }
   });
+
+  // Adiciona evento para fechar ao clicar na opção do menu
+  // ancora.addEventListener("click", function closeOnClick(event) {
+  //   const nav = document.querySelector("nav");
+  //   const menuButton = document.getElementById("menu-button");
+
+  //   if ((event.target === ancora) & (menuButton.style.display === "flex")) {
+  //     nav.style.opacity = "0";
+  //     nav.style.transition = "opacity 0.3s linear";
+  //   }
+  // });
 });
 
 // Evento para abrir e fechar o menu hamburguer
-const menuButton = document.getElementById("menu-button");
 const menu = document.querySelector("nav ul");
-const nav = document.querySelector("nav");
 
 menuButton.addEventListener("click", function closeMenu() {
   if (menu.style.display === "flex") {
@@ -53,11 +64,9 @@ $(".owl-carousel").owlCarousel({
   responsive: {
     0: {
       items: 2,
+      margin: 20,
     },
-    600: {
-      items: 2,
-    },
-    1000: {
+    900: {
       items: 2,
     },
   },
@@ -123,3 +132,16 @@ function openPopup(popUp) {
     }
   });
 }
+
+// Função para verificar o tamanho da tela e recarregar a página se necessário
+function verificarTamanhoDaTela() {
+  // Defina o tamanho limite, por exemplo, 900 pixels
+  var tamanhoLimite = 900;
+
+  if (window.innerWidth <= tamanhoLimite) {
+    location.reload();
+  }
+}
+// Adiciona um ouvinte de evento para o evento de redimensionamento da janela
+window.addEventListener('resize', verificarTamanhoDaTela);
+

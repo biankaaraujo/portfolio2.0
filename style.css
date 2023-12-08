@@ -201,7 +201,6 @@ main {
 }
 
 #projetos .itensProjetos img {
-  /* display: flex; */
   width: 400px;
   height: 240px;
   border-radius: 10px;
