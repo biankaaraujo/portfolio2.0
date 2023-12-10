@@ -23,17 +23,6 @@ document.querySelectorAll("nav ul li a[href^='#']").forEach((ancora) => {
       nav.style.transition = "opacity 0.3s linear";
     }
   });
-
-  // Adiciona evento para fechar ao clicar na opção do menu
-  // ancora.addEventListener("click", function closeOnClick(event) {
-  //   const nav = document.querySelector("nav");
-  //   const menuButton = document.getElementById("menu-button");
-
-  //   if ((event.target === ancora) & (menuButton.style.display === "flex")) {
-  //     nav.style.opacity = "0";
-  //     nav.style.transition = "opacity 0.3s linear";
-  //   }
-  // });
 });
 
 // Evento para abrir e fechar o menu hamburguer
