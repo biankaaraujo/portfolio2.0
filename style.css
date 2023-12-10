@@ -82,8 +82,10 @@ main {
 }
 
 #sobreMim #avatar {
-  width: 250px;
-  max-width: 40%;
+  width: 100%;
+  max-width: 250px;
+  max-height: 340px;
+  /* max-width: 40%; */
 }
 
 #sobreMim #descricao {
@@ -104,6 +106,7 @@ main {
 
 .titulo {
   position: relative;
+  text-align: center;
 }
 
 .titulo h2 {
@@ -122,7 +125,7 @@ main {
   position: absolute;
   width: 100%;
   top: 0;
-  margin-left: 10px;
+  right: 0;
 }
 
 #sobreMim #descricao p {
@@ -365,10 +368,8 @@ main {
   #menu-button {
     display: inline-block;
     align-self: flex-end;
-    /* position: relative; */
     top: 30%;
     transform: translateY(-30%);
-    /* padding-bottom: 0; */
   }
   nav {
     flex-direction: column;
@@ -381,21 +382,11 @@ main {
     opacity: 0;
     transition: opacity 0.5s linear;
   }
-  nav.show {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
   nav ul {
     display: none;
     flex-direction: column;
     align-items: center;
     padding: 20px 0px;
-  }
-  nav ul.show {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
   nav ul li {
     padding: 15px 0px;
@@ -416,7 +407,6 @@ main {
     padding-top: 150px;
   }
   #sobreMim #avatar {
-    max-width: 100%;
     align-self: center;
   }
   #sobreMim #descricao {
@@ -424,13 +414,6 @@ main {
     margin-top: 50px;
     padding-top: 50px;
     padding-bottom: 50px;
-  }
-  #sobreMim #descricao .titulo {
-    text-align: center;
-  }
-  #sobreMim #descricao .titulo span {
-    right: 0;
-    padding: 1px;
   }
   #sobreMim #descricao p {
     margin-top: 0px;
@@ -483,12 +466,6 @@ main {
     font-size: 20px;
     letter-spacing: 15px;
     line-height: 45px;
-  }
-  #sobreMim #descricao .titulo {
-    text-align: center;
-  }
-  #sobreMim #descricao .titulo span {
-    right: 0;
   }
   #habilidades {
     flex-direction: column;
